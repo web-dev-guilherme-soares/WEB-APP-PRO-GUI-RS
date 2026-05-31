@@ -1,0 +1,11 @@
+:root {
+    --M_BACKGROUND_COLOR: rgb(50, 50, 50);
+
+    --M_BACKGROUND_COLOR_OUTHER: rgb(74, 38, 38);
+
+    --M_TEXT_COLOR: white;
+
+    --SHADOW_COLOR: red;
+
+    --M_WIDTH_SHADOW: 10px;
+}

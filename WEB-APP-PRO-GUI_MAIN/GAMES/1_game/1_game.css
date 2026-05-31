@@ -1,0 +1,13 @@
+#m_obstacle {
+    animation: an_obstacle 3s linear infinite;
+}
+
+@keyframes an_obstacle {
+    0% {
+        margin-right: 0%;
+    }
+
+    100% {
+        margin-right: 100%;
+    }
+}
