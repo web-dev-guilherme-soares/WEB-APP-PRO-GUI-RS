@@ -1,0 +1,87 @@
+#m_game {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    align-items: end;
+    
+    position: relative;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(50px);
+
+    border-radius: 15px;
+
+    margin-bottom: 5px;
+}
+
+#m_clouds {
+    width: 150px;
+    height: 70px;
+
+    position: absolute;
+
+    bottom: 80%;
+    right: 0;
+
+    animation: an_mov 7s linear infinite;
+
+    filter: brightness(50%);
+}
+
+#m_mario {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+
+    filter: brightness(50%);
+}
+
+#m_pipe {
+    border-radius: 0px;
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    right: 0;
+
+    animation: an_mov 3s linear infinite;
+
+    filter: brightness(50%);
+}
+
+.jump {
+    animation: an_jump 1s linear;
+}
+
+@keyframes an_jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    80% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes an_mov {
+    from {
+        right: 0%;
+    }
+
+
+    to {
+        right: 100%;
+    }
+}
